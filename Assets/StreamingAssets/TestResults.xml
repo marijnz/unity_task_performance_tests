@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2019-04-01 21:14:13Z" end-time="2019-04-01 21:14:15Z" duration="2.8809843">
+  <test-suite type="TestSuite" id="1011" name="TaskPerformanceTests" fullname="TaskPerformanceTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2019-04-01 21:14:13Z" end-time="2019-04-01 21:14:15Z" duration="2.880984" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1015" name="Performance-Tests.dll" fullname="/Users/marijnzwemmer/Projects/TaskPerformanceTests/Library/ScriptAssemblies/Performance-Tests.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-04-01 21:14:13Z" end-time="2019-04-01 21:14:15Z" duration="2.195182" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="4726" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+      </properties>
+      <test-suite type="TestFixture" id="1012" name="TaskPerformanceTests" fullname="TaskPerformanceTests" classname="TaskPerformanceTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-04-01 21:14:13Z" end-time="2019-04-01 21:14:15Z" duration="2.163555" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1014" name="AsyncMethodTest" fullname="TaskPerformanceTests.AsyncMethodTest" methodname="AsyncMethodTest" classname="TaskPerformanceTests" runstate="Runnable" seed="834396071" result="Passed" start-time="2019-04-01 21:14:05Z" end-time="0001-01-01 00:00:00Z" duration="4.608825" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <reason>
+            <message><![CDATA[]]></message>
+          </reason>
+          <output><![CDATA[UniTaskAsyncMethod.GC() None Median:500.00 Min:500.00 Max:500.00 Avg:500.00 Std:0.00 Zeroes:0 SampleCount: 10 Sum: 5000.00
+UniTaskAsyncMethod Millisecond Median:0.12 Min:0.10 Max:0.13 Avg:0.12 Std:0.01 Zeroes:0 SampleCount: 10 Sum: 1.18
+TaskAsyncMethod.GC() None Median:1052.00 Min:1014.00 Max:1204.00 Avg:1056.70 Std:51.47 Zeroes:0 SampleCount: 10 Sum: 10567.00
+TaskAsyncMethod Millisecond Median:0.84 Min:0.78 Max:1.17 Avg:0.86 Std:0.11 Zeroes:0 SampleCount: 10 Sum: 8.61
+
+##performancetestresult:{"TestName":"TaskPerformanceTests.AsyncMethodTest","TestCategories":["Uncategorized"],"TestVersion":"1","StartTime":1554153248138.906,"EndTime":1554153250383.06,"SampleGroups":[{"Definition":{"Name":"UniTaskAsyncMethod.GC()","SampleUnit":8,"AggregationType":3,"Threshold":0.15,"IncreaseIsBetter":false,"Percentile":0.0,"FailOnBaseline":true},"Samples":[500.0,500.0,500.0,500.0,500.0,500.0,500.0,500.0,500.0,500.0],"Min":500.0,"Max":500.0,"Median":500.0,"Average":500.0,"StandardDeviation":0.0,"PercentileValue":0.0,"Sum":5000.0,"Zeroes":0,"SampleCount":10},{"Definition":{"Name":"UniTaskAsyncMethod","SampleUnit":2,"AggregationType":3,"Threshold":0.15,"IncreaseIsBetter":false,"Percentile":0.0,"FailOnBaseline":true},"Samples":[0.12617111206054688,0.12254714965820313,0.10881423950195313,0.10304450988769531,0.103759765625,0.11858940124511719,0.110626220703125,0.12359619140625,0.1286029815673828,0.1331806182861328],"Min":0.10304450988769531,"Max":0.1331806182861328,"Median":0.12254714965820313,"Average":0.11789321899414063,"StandardDeviation":0.01013444886927417,"PercentileValue":0.0,"Sum":1.1789321899414063,"Zeroes":0,"SampleCount":10},{"Definition":{"Name":"TaskAsyncMethod.GC()","SampleUnit":8,"AggregationType":3,"Threshold":0.15,"IncreaseIsBetter":false,"Percentile":0.0,"FailOnBaseline":true},"Samples":[1204.0,1055.0,1052.0,1060.0,1046.0,1014.0,1025.0,1052.0,1042.0,1017.0],"Min":1014.0,"Max":1204.0,"Median":1052.0,"Average":1056.7,"StandardDeviation":51.46853407665697,"PercentileValue":0.0,"Sum":10567.0,"Zeroes":0,"SampleCount":10},{"Definition":{"Name":"TaskAsyncMethod","SampleUnit":2,"AggregationType":3,"Threshold":0.15,"IncreaseIsBetter":false,"Percentile":0.0,"FailOnBaseline":true},"Samples":[1.17340087890625,0.8374214172363281,0.86517333984375,0.8225917816162109,0.8080005645751953,0.8356094360351563,0.7815837860107422,0.830841064453125,0.8612155914306641,0.7941722869873047],"Min":0.7815837860107422,"Max":1.17340087890625,"Median":0.8356094360351563,"Average":0.8610010147094727,"StandardDeviation":0.1071349493577114,"PercentileValue":0.0,"Sum":8.610010147094727,"Zeroes":0,"SampleCount":10}]}
+]]></output>
+        </test-case>
+        <test-case id="1013" name="TaskCompletionSourceTest" fullname="TaskPerformanceTests.TaskCompletionSourceTest" methodname="TaskCompletionSourceTest" classname="TaskPerformanceTests" runstate="Runnable" seed="1299602904" result="Passed" start-time="2019-04-01 21:14:10Z" end-time="2019-04-01 21:14:15Z" duration="5.430799" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <output><![CDATA[UniTaskCompletionSource.GC() None Median:100.00 Min:100.00 Max:100.00 Avg:100.00 Std:0.00 Zeroes:0 SampleCount: 10 Sum: 1000.00
+UniTaskCompletionSource Millisecond Median:0.02 Min:0.02 Max:0.02 Avg:0.02 Std:0.00 Zeroes:0 SampleCount: 10 Sum: 0.19
+TaskCompletionSource.GC() None Median:200.00 Min:200.00 Max:200.00 Avg:200.00 Std:0.00 Zeroes:0 SampleCount: 10 Sum: 2000.00
+TaskCompletionSource Millisecond Median:0.03 Min:0.03 Max:0.03 Avg:0.03 Std:0.00 Zeroes:0 SampleCount: 10 Sum: 0.29
+
+##performancetestresult:{"TestName":"TaskPerformanceTests.TaskCompletionSourceTest","TestCategories":["Uncategorized"],"TestVersion":"1","StartTime":1554153253749.5552,"EndTime":1554153255839.7112,"SampleGroups":[{"Definition":{"Name":"UniTaskCompletionSource.GC()","SampleUnit":8,"AggregationType":3,"Threshold":0.15,"IncreaseIsBetter":false,"Percentile":0.0,"FailOnBaseline":true},"Samples":[100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0],"Min":100.0,"Max":100.0,"Median":100.0,"Average":100.0,"StandardDeviation":0.0,"PercentileValue":0.0,"Sum":1000.0,"Zeroes":0,"SampleCount":10},{"Definition":{"Name":"UniTaskCompletionSource","SampleUnit":2,"AggregationType":3,"Threshold":0.15,"IncreaseIsBetter":false,"Percentile":0.0,"FailOnBaseline":true},"Samples":[0.020599365234375,0.018787384033203126,0.019979476928710939,0.017976760864257814,0.018024444580078126,0.020599365234375,0.018167495727539064,0.018215179443359376,0.017976760864257814,0.017976760864257814],"Min":0.017976760864257814,"Max":0.020599365234375,"Median":0.018215179443359376,"Average":0.018830299377441407,"StandardDeviation":0.001059920088024312,"PercentileValue":0.0,"Sum":0.18830299377441407,"Zeroes":0,"SampleCount":10},{"Definition":{"Name":"TaskCompletionSource.GC()","SampleUnit":8,"AggregationType":3,"Threshold":0.15,"IncreaseIsBetter":false,"Percentile":0.0,"FailOnBaseline":true},"Samples":[200.0,200.0,200.0,200.0,200.0,200.0,200.0,200.0,200.0,200.0],"Min":200.0,"Max":200.0,"Median":200.0,"Average":200.0,"StandardDeviation":0.0,"PercentileValue":0.0,"Sum":2000.0,"Zeroes":0,"SampleCount":10},{"Definition":{"Name":"TaskCompletionSource","SampleUnit":2,"AggregationType":3,"Threshold":0.15,"IncreaseIsBetter":false,"Percentile":0.0,"FailOnBaseline":true},"Samples":[0.028181076049804689,0.027990341186523439,0.03204345703125,0.027942657470703126,0.028228759765625,0.028228759765625,0.030231475830078126,0.02803802490234375,0.028181076049804689,0.028228759765625],"Min":0.027942657470703126,"Max":0.03204345703125,"Median":0.028228759765625,"Average":0.02872943878173828,"StandardDeviation":0.0012741906174126377,"PercentileValue":0.0,"Sum":0.2872943878173828,"Zeroes":0,"SampleCount":10}]}
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1018" name="Unity.PerformanceTesting.Editor.dll" fullname="/Users/marijnzwemmer/Projects/TaskPerformanceTests/Library/ScriptAssemblies/Unity.PerformanceTesting.Editor.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-04-01 21:14:15Z" end-time="2019-04-01 21:14:15Z" duration="0.030781" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="4726" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+      </properties>
+      <test-suite type="TestFixture" id="1016" name="EditmodeMetadataCollector" fullname="EditmodeMetadataCollector" classname="EditmodeMetadataCollector" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-04-01 21:14:15Z" end-time="2019-04-01 21:14:15Z" duration="0.018150" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties>
+          <property name="Category" value="Performance" />
+        </properties>
+        <test-case id="1017" name="GetPlayerSettingsTest" fullname="EditmodeMetadataCollector.GetPlayerSettingsTest" methodname="GetPlayerSettingsTest" classname="EditmodeMetadataCollector" runstate="Runnable" seed="1445163804" result="Passed" start-time="2019-04-01 21:14:15Z" end-time="2019-04-01 21:14:15Z" duration="0.007952" asserts="0">
+          <properties />
+          <output><![CDATA[##performancetestruninfo:{"PlayerSystemInfo":{"OperatingSystem":"Mac OS X 10.14.1","DeviceModel":"MacBookPro11,5","DeviceName":"Marijn’s MacBook Pro","ProcessorType":"Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz","ProcessorCount":8,"GraphicsDeviceName":"AMD Radeon R9 M370X","SystemMemorySize":16384,"XrModel":"","XrDevice":""},"EditorVersion":{"FullVersion":"2018.3.3f1 (393bae82dbb8)","DateSeconds":1548267374,"Branch":"2018.3/staging","RevisionValue":3750830},"BuildSettings":{"Platform":"OSXEditor","BuildTarget":"StandaloneOSX","DevelopmentPlayer":false,"AndroidBuildSystem":"Gradle"},"ScreenSettings":{"ScreenWidth":0,"ScreenHeight":0,"ScreenRefreshRate":0,"Fullscreen":false},"QualitySettings":{"Vsync":0,"AntiAliasing":0,"ColorSpace":"","AnisotropicFiltering":"","BlendWeights":""},"PlayerSettings":{"ScriptingBackend":"Mono2x","VrSupported":false,"MtRendering":true,"GraphicsJobs":false,"GpuSkinning":true,"GraphicsApi":"Metal","Batchmode":"False","StereoRenderingPath":"MultiPass","RenderThreadingMode":"MultiThreaded","AndroidMinimumSdkVersion":"AndroidApiLevel16","AndroidTargetSdkVersion":"AndroidApiLevelAuto","EnabledXrTargets":[],"ScriptingRuntimeVersion":"Latest"},"TestSuite":"Editmode","StartTime":1554153245676.371,"EndTime":0.0,"Results":[]}]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

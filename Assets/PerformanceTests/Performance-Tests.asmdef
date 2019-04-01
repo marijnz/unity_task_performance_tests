@@ -1,0 +1,15 @@
+{
+    "name": "Performance-Tests",
+    "references": [
+        "Unity.PerformanceTesting",
+        "UniRx.Async"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
